@@ -3,17 +3,17 @@ package com.quickprayers;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
+import net.runelite.client.config.Keybind;
 
-@ConfigGroup("example")
+@ConfigGroup("quickprayerflicker")
 public interface QuickPrayerFlickerConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+			keyName = "hotkey",
+			name = "Toggle hotkey",
+			description = "The hotkey which will toggle the prayer flicker on/off"
 	)
-	default String greeting()
-	{
-		return "Hello";
+	default Keybind hotkey() {
+		return Keybind.NOT_SET;
 	}
 }

@@ -7,7 +7,7 @@ public class QuickPrayerFlickerTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(QuickPrayerFlicker.class);
+		ExternalPluginManager.loadBuiltin(QuickPrayerFlickerPlugin.class);
 		RuneLite.main(args);
 	}
 }
